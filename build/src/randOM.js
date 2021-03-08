@@ -1,6 +1,6 @@
-var cache='OUIAM';
 
-(function(){let $={
+
+
 
   getOne:()=>{
 
@@ -8,7 +8,7 @@ var cache='OUIAM';
 
     index=Math.floor(Math.random()*list.length);
 
-    return list[index];
+
 
   },
 
@@ -202,4 +202,4 @@ OM._active_list=tmp.s;
 
 OM.id=tmp.m;
 
-OM.save();
+
