@@ -91,12 +91,12 @@ var cache='OUIAM';
   ennawawiMode:()=>{
     let v=[],cr=[],used=[],list=$._lists[$._active_list];
     for(let i=0;i<list.length;i++){
-      var vOrCr=Math.floor(Math.random()*2),
-      item=Math.floor(Math.random()*list.length);
+
+      var item=Math.floor(Math.random()*list.length);
       while(used.indexOf(item)>=0){
           item=Math.floor(Math.random()*list.length);
       }
-      if(vOrCr==1){
+      if(i%2){
         cr.push(list[item]);
         
       }else{
