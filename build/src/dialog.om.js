@@ -110,6 +110,34 @@ var $={
     }
     return m;
   },
+  
+share: async function() {
+    if (OM.iso) {
+      const base64url = "LSM.jpg";
+      const b = await fetch(base64url);
+      const blob = await b.blob();
+      const file = new File([blob], 'boboo.png', { type: blob.type });
+      var shareData = {
+        title: 'OM ❤️',
+        text: 'Happy anniversary boboo!',
+        url: 'https://rand-om.onrender.com',
+        files: [file],
+      }
+    } else {
+      var shareData = {
+        title: 'randOM',
+        text: 'Try randOM, make your decisions easily!',
+        url: 'https://rand-om.onrender.com'
+      }
+    }
+    if (navigator.canShare) {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        alert(err);
+      }
+    } else {alert('unsupported')};
+  },
   om:()=>{
     var o='❤️,💙'.split(','),
     i=Math.floor(Math.random()*o.length);
