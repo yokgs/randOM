@@ -91,13 +91,13 @@ var $={
     }return m;
   },
   EMView:()=>{
-    try{
+
     var list=OM.ennawawiMode(),disp='';
     for(let i=0;i<list.length;i++){
       disp+=(i+1)+'. '+list[i]+'\n';
     }
     alert(disp);
-     }catch(t){alert(t)}
+
   },
   listMany:function(e){
     var r=OM.getMany(e),t={};
@@ -112,8 +112,8 @@ var $={
   },
   
 share: async function() {
-    if (OM.iso) {
-      const base64url = "LSM.jpg";
+    if (OM.iso) {=
+      const base64url = "assets/LSM.jpg";
       const b = await fetch(base64url);
       const blob = await b.blob();
       const file = new File([blob], 'boboo.png', { type: blob.type });
