@@ -91,11 +91,13 @@ var $={
     }return m;
   },
   EMView:()=>{
+    try{
     var list=OM.ennawawiMode(),disp='';
     for(let i=0;i<list.length;i++){
       disp+=(i+1)+'. '+list[i];
     }
     alert(disp);
+     }catch(t){alert(t)}
   },
   listMany:function(e){
     var r=OM.getMany(e),t={};
