@@ -112,7 +112,7 @@ var $={
   },
   
 share: async function() {
-    if (OM.iso) {=
+    if (OM.iso) {
       const base64url = "assets/LSM.jpg";
       const b = await fetch(base64url);
       const blob = await b.blob();
