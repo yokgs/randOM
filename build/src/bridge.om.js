@@ -1,4 +1,5 @@
-var alive = true,
+function bridge(){
+  var alive = true,
   message = 'Welcome to randOM\nany key to start',
   _default = '',
   goal = 'run';
@@ -116,4 +117,4 @@ while (alive) {
       message = YS.list(goal); 
     break;
   }
-}
+}}
