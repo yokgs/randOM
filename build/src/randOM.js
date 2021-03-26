@@ -89,9 +89,20 @@ var cache='OUIAM';
     return list;
   },
   ennawawiMode:()=>{
-    let v=[],cr=[],list=$._lists[$._active_list];
+    let v=[],cr=[],used=[],list=$._lists[$._active_list];
     for(let i=0;i<list.length;i++){
-      
+      var vOrCr=Math.floor(Math.random()*2),
+      item=Math.floor(Math.random()*list.length);
+      while(used.indexOf(item)>=0){
+          item=Math.floor(Math.random()*list.length);
+      }
+      if(vOrCr==1){
+        cr.push(list[item]);
+        
+      }else{
+        v.push(list[item]);
+      }
+      used.push(item);
     }
   },
   download:(function() {
