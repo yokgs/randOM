@@ -1,0 +1,12 @@
+{
+  "short_name": "OM",
+  "name": "randOM",
+  "description": "the easiest way to take a decision",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+    ],
+}
