@@ -21,7 +21,7 @@ var $={
         if(!OM._active_list){
           op=YS._delete(op,['items','get one','get many'])
         }else if(!(OM._lists[OM._active_list]||[]).length){
-          op=YS._delete(op,['get one','get many'])
+          op=YS._delete(op,['get one','Ennawawi Mode'])
         }
       break;
       case 'lists':
