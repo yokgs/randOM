@@ -1,6 +1,6 @@
 var $={
   option:{
-    'menu':['menu','lists','items','get one','more'],
+    'menu':['menu','lists','items','Ennawawi Mode','get one','more'],
     'lists':['menu','new list','change list','remove list','export list','view lists'],
     'items':['menu','add item','remove item','view items'],
     'more':['menu','activate OM','my ID','about'],
