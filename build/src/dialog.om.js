@@ -94,7 +94,7 @@ var $={
     try{
     var list=OM.ennawawiMode(),disp='';
     for(let i=0;i<list.length;i++){
-      disp+=(i+1)+'. '+list[i];
+      disp+=(i+1)+'. '+list[i]+'\n';
     }
     alert(disp);
      }catch(t){alert(t)}
