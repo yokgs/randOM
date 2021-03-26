@@ -90,6 +90,13 @@ var $={
       i++;
     }return m;
   },
+  EMView:()=>{
+    var list=OM.ennawawiMode(),disp='';
+    for(let i=0;i<list.length;i++){
+      disp+=(i+1)+'. '+list[i];
+    }
+    alert(disp);
+  },
   listMany:function(e){
     var r=OM.getMany(e),t={};
     for(let i=0;i<r.length;i++){
