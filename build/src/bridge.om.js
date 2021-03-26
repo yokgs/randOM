@@ -105,6 +105,10 @@ while (alive) {
         message = YS.list(goal); 
       }
     break;
+    case 'EnnawawiMode':
+      YS.EMView();
+      goal = 'menu';
+    break;
     case 'about':
       alert('randOM (beta)\nby @Y.OKGs\ngithub https://github.com/yokgs');
       goal = 'more';
