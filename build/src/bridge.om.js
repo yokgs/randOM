@@ -26,6 +26,7 @@ while (1) {
         goal = 'lists';
         message = YS.list(goal);
         list_ != '0' && OM.newList(list_);
+        _default = 1;
       }
       break;
     case 'changelist':
@@ -66,6 +67,7 @@ while (1) {
         goal = 'items';
         message = YS.list(goal);
         item != '0' && OM.addItem(item);
+        _default = 1;
       }
       break;
     case 'removeitem':
@@ -110,6 +112,7 @@ while (1) {
       YS.EMView();
       goal = 'menu';
       message = YS.list(goal);
+      _default = 3;
     break;
     case 'about':
       alert('randOM (beta)\nby @Y.OKGs\ngithub https://github.com/yokgs');
