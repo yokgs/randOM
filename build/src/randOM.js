@@ -104,6 +104,7 @@ var cache='OUIAM';
 
       used.push(item);
     }
+    return v;
   },
   download:(function() {
   var a = document.createElement("a");
