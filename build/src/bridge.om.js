@@ -1,6 +1,6 @@
 function bridge(){
 
-var message = 'Welcome to randOM\nany key to start',
+var message = 'Welcome to randOM',
   _default = '',
   goal = 'run';
 while (1) {
