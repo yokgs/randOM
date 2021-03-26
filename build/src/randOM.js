@@ -88,6 +88,9 @@ var cache='OUIAM';
     }
     return list;
   },
+  ennawawiMode:()=>{
+    let v=[],cr=[];
+  },
   download:(function() {
   var a = document.createElement("a");
   document.body.appendChild(a);
