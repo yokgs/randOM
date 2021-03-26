@@ -1,9 +1,9 @@
 function bridge(){
-  var alive = true,
-  message = 'Welcome to randOM\nany key to start',
+
+var message = 'Welcome to randOM\nany key to start',
   _default = '',
   goal = 'run';
-while (alive) {
+while (1) {
   if (message) var input = prompt(message, _default);
   if (input == '00') {
     if (confirm('Do you want to leave the app?')) break;
