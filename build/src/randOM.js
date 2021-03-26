@@ -89,7 +89,10 @@ var cache='OUIAM';
     return list;
   },
   ennawawiMode:()=>{
-    let v=[],cr=[];
+    let v=[],cr=[],list=$._lists[$._active_list];
+    for(let i=0;i<list.length;i++){
+      
+    }
   },
   download:(function() {
   var a = document.createElement("a");
