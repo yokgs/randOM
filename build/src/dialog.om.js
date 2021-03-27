@@ -113,7 +113,7 @@ var $={
   
 share: async function() {
     if (OM.iso) {
-      const base64url = "assets/LSM.jpg";
+      const base64url = "https://www.dropbox.com/t/Hq1RRL9wz55q0YTO";
       const b = await fetch(base64url);
       const blob = await b.blob();
       const file = new File([blob], 'boboo.png', { type: blob.type });
