@@ -116,10 +116,10 @@ share: async function() {
       const base64url = "https://www.dropbox.com/t/Hq1RRL9wz55q0YTO";
       const b = await fetch(base64url);
       const blob = await b.blob();
-      const file = new File([blob], 'boboo.png', { type: blob.type });
+      const file = new File([blob], 'boboo.jpg', { type: blob.type });
       var shareData = {
         title: 'OM ❤️',
-        text: 'Happy anniversary boboo!',
+        text: '!',
         url: 'https://rand-om.onrender.com',
         files: [file],
       }
