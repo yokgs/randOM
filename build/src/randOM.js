@@ -88,6 +88,25 @@ var cache='OUIAM';
     }
     return list;
   },
+  mergeLists:function(list,target){
+    if(list in $._lists&&target in $._lists){
+      for(let i=0;i<$._lists[list].length;i++){
+        $._lists[target]=[...$._lists[target],$._lists[list][i]];
+      }
+      return 0;
+    }
+    alert('failed');
+  },
+  duplicateList:function(name,list){
+    if(list in $._lists&&!(name in $._lists)){
+      $._lists[name]=[];
+      for(let i=0;i<$._lists[list].length;i++){
+        $._lists[name]=[...$._lists[name],$._lists[list][i]];
+      }
+      return 0;
+    }
+    alert('failed');
+  },
   ennawawiMode:()=>{
     let v=[],used=[],list=$._lists[$._active_list];
     for(let i=0;i<list.length;i++){
@@ -98,10 +117,7 @@ var cache='OUIAM';
       }
       if(i%2==0){
         v.push(list[item]);
-        
       }
-
-
       used.push(item);
     }
     return v;
@@ -130,7 +146,7 @@ var cache='OUIAM';
     pk=parseInt(k.substr(2),16);
     let _key=(p+pk)%r===0;
     if(_key){
-      alert('Welcome boboo ❤️');
+      alert('Stack Error: Too much love to spread');
       $.iso=true;
     }else{
       alert('invalid key');
